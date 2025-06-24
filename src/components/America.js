@@ -2,6 +2,7 @@ import Iran from './Iran';
 import India from './India';
 import Russia from './Russia';
 import Srilanka from './Srilanka';
+import Country from './Country';
 function America(){
   // const state = "Jaffna";
   const dialogue = "punda";
@@ -16,6 +17,13 @@ function America(){
   };
   // const slInfo = {};
   const iswarstarted = false;
+  const countryInfo = { country: "Russia", state: "Moscow" };
+  const iscountry = true;
+  const countryList = [
+    { country: "America" , state: "Losvegas" },
+    { country: "China" , state: "Colombo" },
+    { country: "India" , state: "Delhi" },
+  ];
   return(
     <div>
       <h1>America - we are not scare about u </h1>
@@ -28,7 +36,10 @@ function America(){
         <Srilanka slInfo = {slInfo}/> : null
       }
       {iswarstarted ? <h2>War is started</h2> : <h3>War is not started</h3>}
-      
+      {iscountry ? <h2>Country is {countryInfo.country} and state is {countryInfo.state}</h2> : <h3>Country is not defined</h3>}
+      <ul>
+        {countryList.map((countryInfo) => <li><Country countryInfo = {countryInfo}/></li>)}
+      </ul>
       
     </div>
   );
