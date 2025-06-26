@@ -24,6 +24,7 @@ function America(){
     { country: "China" , state: "Colombo" },
     { country: "India" , state: "Delhi" },
   ];
+  const numberList = [1, 2, 3, 4, 5, 5, 8, 3,7, 9, 10, 11, 12, 10, 14, 15];
   return(
     <div>
       <h1>America - we are not scare about u </h1>
@@ -38,7 +39,10 @@ function America(){
       {iswarstarted ? <h2>War is started</h2> : <h3>War is not started</h3>}
       {iscountry ? <h2>Country is {countryInfo.country} and state is {countryInfo.state}</h2> : <h3>Country is not defined</h3>}
       <ul>
-        {countryList.map((countryInfo) => <li><Country countryInfo = {countryInfo}/></li>)}
+        {countryList.map((countryInfo) => <li key={countryInfo.country}><Country countryInfo = {countryInfo}/></li>)}
+      </ul>
+      <ul>
+        {numberList.map((number, index) => <li key={index}>Number is {number}</li>)}
       </ul>
       
     </div>
