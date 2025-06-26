@@ -5,7 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import America from './components/America';
 import Russia from './components/Russia'; 
-import Header from './components/Header';
+import Favouritecolor from './components/FavouriteColor';
+import Movie from './components/Movie';
+import Scooter from './components/Scooter';
+
 
 
 
@@ -18,7 +21,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <America/> */}
-    <Header/>
+    {/* <Header/> */}
+    <Favouritecolor/>
+    <Movie/>
+    <Scooter/>
     
   </React.StrictMode>
 );

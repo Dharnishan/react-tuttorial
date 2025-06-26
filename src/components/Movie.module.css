@@ -1,0 +1,24 @@
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    border: 5px solid #f90000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2c3648e4;
+}
+
+.button{
+    background-color: #f90000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.purchase{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #18f000;
+}
